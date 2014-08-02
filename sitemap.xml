@@ -3,35 +3,35 @@
   
   
   <url>
-    <loc>http://pace-noge.github.io/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/</loc>
+    <loc>http://octopress.nayaklabs.com/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/</loc>
     <lastmod>2014-08-02T21:22:12+07:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://pace-noge.github.io/blog/2014/08/02/initial-post-for-my-octopress-based-blog/</loc>
+    <loc>http://octopress.nayaklabs.com/blog/2014/08/02/initial-post-for-my-octopress-based-blog/</loc>
     <lastmod>2014-08-02T20:28:30+07:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   
   <url>
-    <loc>http://pace-noge.github.io/blog/archives/</loc>
-    <lastmod>2014-08-02T23:26:55+07:00</lastmod>
+    <loc>http://octopress.nayaklabs.com/blog/archives/</loc>
+    <lastmod>2014-08-02T23:35:03+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://pace-noge.github.io/</loc>
-    <lastmod>2014-08-02T23:26:55+07:00</lastmod>
+    <loc>http://octopress.nayaklabs.com/</loc>
+    <lastmod>2014-08-02T23:35:03+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://pace-noge.github.io/about/</loc>
-    <lastmod>2014-08-02T23:26:55+07:00</lastmod>
+    <loc>http://octopress.nayaklabs.com/about/</loc>
+    <lastmod>2014-08-02T23:35:03+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

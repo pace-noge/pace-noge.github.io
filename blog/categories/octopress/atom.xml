@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Octopress | Nayak Labs]]></title>
-  <link href="http://pace-noge.github.io/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://pace-noge.github.io/"/>
-  <updated>2014-08-02T23:26:55+07:00</updated>
-  <id>http://pace-noge.github.io/</id>
+  <link href="http://octopress.nayaklabs.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://octopress.nayaklabs.com/"/>
+  <updated>2014-08-02T23:35:03+07:00</updated>
+  <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Host Octopress Di Github Dengan Domain Sendiri]]></title>
-    <link href="http://pace-noge.github.io/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/"/>
+    <link href="http://octopress.nayaklabs.com/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/"/>
     <updated>2014-08-02T21:22:12+07:00</updated>
-    <id>http://pace-noge.github.io/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri</id>
+    <id>http://octopress.nayaklabs.com/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri</id>
     <content type="html"><![CDATA[<p>Siapa sih yang tidak kenal dengan octopress?, atau mungkin masih banyak yang belum tahu tentang octopress. lebih lengkapnya baca <a href="http://octopress.org/">disini</a></p>
 
 <p>oke, octopress adalah blog yang dibangun menggunakan jekyll, artinya bahasa yang digunakan adalah ruby. seperti yang blog yang sedang anda baca ini. blog ini menggunakan octopress dengan hosting di github dan itu gratis walaupun orang orang dapat melihat source code blog kita.</p>

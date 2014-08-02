@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://pace-noge.github.io/atom.xml" rel="self"/>
   <link href="http://pace-noge.github.io/"/>
-  <updated>2014-08-02T20:22:12+07:00</updated>
+  <updated>2014-08-02T20:40:35+07:00</updated>
   <id>http://pace-noge.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Initial Post for My Octopress Based Blog]]></title>
+    <link href="http://pace-noge.github.io/blog/2014/08/02/initial-post-for-my-octopress-based-blog/"/>
+    <updated>2014-08-02T20:28:30+07:00</updated>
+    <id>http://pace-noge.github.io/blog/2014/08/02/initial-post-for-my-octopress-based-blog</id>
+    <content type="html"><![CDATA[<h1>initial post from octopress</h1>
+]]></content>
+  </entry>
   
 </feed>

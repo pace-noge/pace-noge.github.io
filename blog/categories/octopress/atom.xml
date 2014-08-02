@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Octopress | Nayak Labs]]></title>
   <link href="http://pace-noge.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://pace-noge.github.io/"/>
-  <updated>2014-08-02T23:08:14+07:00</updated>
+  <updated>2014-08-02T23:13:02+07:00</updated>
   <id>http://pace-noge.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Nasa]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>

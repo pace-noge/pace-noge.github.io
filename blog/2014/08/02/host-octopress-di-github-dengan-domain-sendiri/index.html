@@ -5,8 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Host Octopress Di Github Dengan Domain Sendiri - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Host Octopress Di Github Dengan Domain Sendiri - Nayak Labs</title>
+  <meta name="author" content="Nasa">
 
   
   <meta name="description" content="Siapa sih yang tidak kenal dengan octopress?, atau mungkin masih banyak yang belum tahu tentang octopress. lebih lengkapnya baca disini oke, &hellip;">
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://pace-noge.github.io/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Nayak Labs" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -36,7 +36,7 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Nayak Labs</a></h1>
   
     <h2>A blogging framework for hackers.</h2>
   
@@ -828,7 +828,7 @@
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Nasa</span></span>
 
       
 
@@ -856,8 +856,10 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pace-noge.github.io/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/" data-via="" data-counturl="http://pace-noge.github.io/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pace-noge.github.io/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/" data-via="udhent@yahoo.com" data-counturl="http://pace-noge.github.io/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/" >Tweet</a>
   
+  
+  <div class="g-plusone" data-size="medium"></div>
   
   
 </div>
@@ -891,7 +893,45 @@
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/pace-noge">@pace-noge</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
+        github.showRepos({
+            user: 'pace-noge',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/nasa.freaks@gmail.com?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 
@@ -912,6 +952,14 @@
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | Nayak Labs]]></title>
+  <title><![CDATA[Category: octopress | Nayak Labs]]></title>
   <link href="http://octopress.nayaklabs.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://octopress.nayaklabs.com/"/>
-  <updated>2014-08-03T02:51:23+07:00</updated>
+  <updated>2014-08-03T13:05:04+07:00</updated>
   <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Host Octopress Di Github Dengan Domain Sendiri]]></title>
+    <title type="html"><![CDATA[Host octopress di github dengan domain sendiri]]></title>
     <link href="http://octopress.nayaklabs.com/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/"/>
     <updated>2014-08-02T21:22:12+07:00</updated>
     <id>http://octopress.nayaklabs.com/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri</id>

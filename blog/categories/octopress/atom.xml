@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Nayak Labs]]></title>
   <link href="http://octopress.nayaklabs.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://octopress.nayaklabs.com/"/>
-  <updated>2014-08-03T14:36:10+07:00</updated>
+  <updated>2014-08-03T14:39:08+07:00</updated>
   <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
@@ -31,12 +31,10 @@ description:
 <p>agar lebih mudah terindex oleh google, tag author sebisa mungkin sama dengan nama G+, untuk description di kosongkan saja karena akan terisi secara otomatis bila generate post.</p>
 
 <pre><code>date_format: "ordinal"
-</code></pre>
-
-<p>subscribe_rss: /atom.xml
+subscribe_rss: /atom.xml
 subscribe_email:
 email:
-&#8220;`</p>
+</code></pre>
 
 <p>url untuk rss feeds berada di konfigurasi subscribe_rss: defaultnya adalah /atom.xml</p>
 

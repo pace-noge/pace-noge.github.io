@@ -3,14 +3,14 @@
   
   
   <url>
-    <loc>http://octopress.nayaklabs.com/blog/2014/08/03/konfigurasi-octopress/</loc>
-    <lastmod>2014-08-03T14:17:16+07:00</lastmod>
+    <loc>http://octopress.nayaklabs.com/blog/2014/08/04/how-to-create-a-blog/</loc>
+    <lastmod>2014-08-04T01:39:34+07:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://octopress.nayaklabs.com/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/</loc>
-    <lastmod>2014-08-02T21:22:12+07:00</lastmod>
+    <loc>http://octopress.nayaklabs.com/blog/2014/08/03/konfigurasi-octopress/</loc>
+    <lastmod>2014-08-03T14:17:16+07:00</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -23,28 +23,28 @@
   
   <url>
     <loc>http://octopress.nayaklabs.com/404.html</loc>
-    <lastmod>2014-08-03T19:12:51+07:00</lastmod>
+    <lastmod>2014-08-04T01:43:40+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/</loc>
-    <lastmod>2014-08-03T19:12:51+07:00</lastmod>
+    <lastmod>2014-08-04T01:43:40+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/blog/archives/</loc>
-    <lastmod>2014-08-03T19:12:51+07:00</lastmod>
+    <lastmod>2014-08-04T01:43:40+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/about/</loc>
-    <lastmod>2014-08-03T19:12:51+07:00</lastmod>
+    <lastmod>2014-08-04T01:43:40+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

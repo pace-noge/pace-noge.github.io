@@ -4,7 +4,7 @@
   <title><![CDATA[Nayak Labs]]></title>
   <link href="http://octopress.nayaklabs.com/atom.xml" rel="self"/>
   <link href="http://octopress.nayaklabs.com/"/>
-  <updated>2014-08-03T19:12:51+07:00</updated>
+  <updated>2014-08-04T01:43:40+07:00</updated>
   <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
@@ -14,157 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Konfigurasi octopress]]></title>
-    <link href="http://octopress.nayaklabs.com/blog/2014/08/03/konfigurasi-octopress/"/>
-    <updated>2014-08-03T14:17:16+07:00</updated>
-    <id>http://octopress.nayaklabs.com/blog/2014/08/03/konfigurasi-octopress</id>
-    <content type="html"><![CDATA[<p>Konfigurasi dari octopress berada dalam file yang <strong>_config.yml</strong>.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>url: (isi url anda di sini)
-</span><span class='line'>title: (tag title halaman anda)
-</span><span class='line'>subtitle: (subtitle dari blog kamu) # biasanya isinya adalah blog framework for hackers
-</span><span class='line'>author: (di isi author dari blog kamu) # meta tag untuk author
-</span><span class='line'>simple_search: https://www.google.com/search
-</span><span class='line'>description:</span></code></pre></td></tr></table></div></figure>
-
-
-<p>agar lebih mudah terindex oleh google, tag author sebisa mungkin sama dengan nama G+, untuk description di kosongkan saja karena akan terisi secara otomatis bila generate post.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>date_format: "ordinal"
-</span><span class='line'>subscribe_rss: /atom.xml
-</span><span class='line'>subscribe_email:
-</span><span class='line'>email:</span></code></pre></td></tr></table></div></figure>
-
-
-<p>url untuk rss feeds berada di konfigurasi subscribe_rss: defaultnya adalah /atom.xml</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>paginate: 10          # Posts per page on the blog index
-</span><span class='line'>paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
-</span><span class='line'>recent_posts: 5       # Posts in the sidebar Recent Posts section
-</span><span class='line'>excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
-</span><span class='line'>excerpt_separator: "&lt;!--more--&gt;"
-</span><span class='line'>
-</span><span class='line'>titlecase: true       # Converts page and post titles to titlecase</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>paginate (konfigurasi untuk jumlah post yang ditampilkan pada halaman index)</li>
-<li>paginate_path (struktur url untuk pagination)</li>
-<li>recent_Posts (jumlah recent post yang ditampilkan pada sidebar)</li>
-<li>titlecase (menampilkan halaman dan post dengan huruf awal kapital)</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>konfigurasi sidebar (bila menggunakan theme yang support sidebar)</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>github_user: pace-noge
-</span><span class='line'>github_repo_count: 0
-</span><span class='line'>github_show_profile_link: true
-</span><span class='line'>github_skip_forks: true
-</span><span class='line'>
-</span><span class='line'>twitter_user: udhent
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>google_plus_one: true
-</span><span class='line'>google_plus_one_size: medium
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>googleplus_user: 118040098239619744268
-</span><span class='line'>googleplus_hidden: false
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>pinboard_user:
-</span><span class='line'>pinboard_count: 3
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>delicious_user:
-</span><span class='line'>delicious_count: 3
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>disqus_short_name:
-</span><span class='line'>disqus_show_comment_count: false
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>google_analytics_tracking_id: UA-XXXXXX-X
-</span><span class='line'>
-</span><span class='line'>facebook_like: false</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Konfigurasi diatas untuk social media</p>
-
-<ul>
-<li>github_user (username github)</li>
-<li>twitter_user (username twitter)</li>
-<li>googleplus_user (biasanya angka dari halaman profile di G+)</li>
-</ul>
-
-
-<p>untuk konfigurasi yang lain sama saja, berisi username, kemudian untuk google_analytics_tracking_id bisa di dapatkan dari <a href="https://www.google.com/analyitcs">Google Analytics</a></p>
-
-<p>Source: <a href="http://octopress.org/docs/configuring/">octopress</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Host octopress di github dengan domain sendiri]]></title>
-    <link href="http://octopress.nayaklabs.com/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri/"/>
-    <updated>2014-08-02T21:22:12+07:00</updated>
-    <id>http://octopress.nayaklabs.com/blog/2014/08/02/host-octopress-di-github-dengan-domain-sendiri</id>
+    <title type="html"><![CDATA[how-to-create-a-blog]]></title>
+    <link href="http://octopress.nayaklabs.com/blog/2014/08/04/how-to-create-a-blog/"/>
+    <updated>2014-08-04T01:39:34+07:00</updated>
+    <id>http://octopress.nayaklabs.com/blog/2014/08/04/how-to-create-a-blog</id>
     <content type="html"><![CDATA[<p>Siapa sih yang tidak kenal dengan octopress?, atau mungkin masih banyak yang belum tahu tentang octopress. lebih lengkapnya baca <a href="http://octopress.org/">disini</a></p>
 
 <p>oke, octopress adalah blog yang dibangun menggunakan jekyll, artinya bahasa yang digunakan adalah ruby. seperti yang blog yang sedang anda baca ini. blog ini menggunakan octopress dengan hosting di github dan itu gratis walaupun orang orang dapat melihat source code blog kita.</p>
@@ -893,6 +746,153 @@
 
 
 <p>akhirnya selesai postingan panjang ini, di postingan berikutnya akan saya coba membuat postingan tentang bagaimana menambahkan postingan baru dan halaman baru pada octopress.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Konfigurasi octopress]]></title>
+    <link href="http://octopress.nayaklabs.com/blog/2014/08/03/konfigurasi-octopress/"/>
+    <updated>2014-08-03T14:17:16+07:00</updated>
+    <id>http://octopress.nayaklabs.com/blog/2014/08/03/konfigurasi-octopress</id>
+    <content type="html"><![CDATA[<p>Konfigurasi dari octopress berada dalam file yang <strong>_config.yml</strong>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>url: (isi url anda di sini)
+</span><span class='line'>title: (tag title halaman anda)
+</span><span class='line'>subtitle: (subtitle dari blog kamu) # biasanya isinya adalah blog framework for hackers
+</span><span class='line'>author: (di isi author dari blog kamu) # meta tag untuk author
+</span><span class='line'>simple_search: https://www.google.com/search
+</span><span class='line'>description:</span></code></pre></td></tr></table></div></figure>
+
+
+<p>agar lebih mudah terindex oleh google, tag author sebisa mungkin sama dengan nama G+, untuk description di kosongkan saja karena akan terisi secara otomatis bila generate post.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>date_format: "ordinal"
+</span><span class='line'>subscribe_rss: /atom.xml
+</span><span class='line'>subscribe_email:
+</span><span class='line'>email:</span></code></pre></td></tr></table></div></figure>
+
+
+<p>url untuk rss feeds berada di konfigurasi subscribe_rss: defaultnya adalah /atom.xml</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>paginate: 10          # Posts per page on the blog index
+</span><span class='line'>paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
+</span><span class='line'>recent_posts: 5       # Posts in the sidebar Recent Posts section
+</span><span class='line'>excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+</span><span class='line'>excerpt_separator: "&lt;!--more--&gt;"
+</span><span class='line'>
+</span><span class='line'>titlecase: true       # Converts page and post titles to titlecase</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>paginate (konfigurasi untuk jumlah post yang ditampilkan pada halaman index)</li>
+<li>paginate_path (struktur url untuk pagination)</li>
+<li>recent_Posts (jumlah recent post yang ditampilkan pada sidebar)</li>
+<li>titlecase (menampilkan halaman dan post dengan huruf awal kapital)</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>konfigurasi sidebar (bila menggunakan theme yang support sidebar)</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>github_user: pace-noge
+</span><span class='line'>github_repo_count: 0
+</span><span class='line'>github_show_profile_link: true
+</span><span class='line'>github_skip_forks: true
+</span><span class='line'>
+</span><span class='line'>twitter_user: udhent
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>google_plus_one: true
+</span><span class='line'>google_plus_one_size: medium
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>googleplus_user: 118040098239619744268
+</span><span class='line'>googleplus_hidden: false
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>pinboard_user:
+</span><span class='line'>pinboard_count: 3
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>delicious_user:
+</span><span class='line'>delicious_count: 3
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>disqus_short_name:
+</span><span class='line'>disqus_show_comment_count: false
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>google_analytics_tracking_id: UA-XXXXXX-X
+</span><span class='line'>
+</span><span class='line'>facebook_like: false</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Konfigurasi diatas untuk social media</p>
+
+<ul>
+<li>github_user (username github)</li>
+<li>twitter_user (username twitter)</li>
+<li>googleplus_user (biasanya angka dari halaman profile di G+)</li>
+</ul>
+
+
+<p>untuk konfigurasi yang lain sama saja, berisi username, kemudian untuk google_analytics_tracking_id bisa di dapatkan dari <a href="https://www.google.com/analyitcs">Google Analytics</a></p>
+
+<p>Source: <a href="http://octopress.org/docs/configuring/">octopress</a></p>
 ]]></content>
   </entry>
   

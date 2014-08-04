@@ -9,7 +9,7 @@
   <meta name="author" content="Nasa">
 
   
-  <meta name="description" content="Siapa sih yang tidak kenal dengan octopress?, atau mungkin masih banyak yang belum tahu tentang octopress. lebih lengkapnya baca disini oke, &hellip;">
+  <meta name="description" content="instalasi Davmail Untuk dapat melakukan koneksi dari thunder bird yang dibutuhkan adalah Davmail sebagai perantara antara Thunderbird dan exchange &hellip;">
   <meta name="keywords" content="">
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,81 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/04/thunderbird-and-exchange-server/">Thunderbird and Exchange Server</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-04T23:30:41+07:00" pubdate data-updated="true">Aug 4<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>instalasi Davmail</h2>
+
+<p>Untuk dapat melakukan koneksi dari thunder bird yang dibutuhkan adalah Davmail sebagai perantara antara Thunderbird dan exchange server.</p>
+
+<p>Untuk instalasi davmail anda dapat mendownload dari sini <a href="http://sourceforge.net/projects/davmail/files/">Davmail</a>. setelah anda mendownload versi terakhir dari davamail, buka terminal kemudian masuk ke directory tempat download davmail tersebut. kemudian masukkan perintah berikut untuk instalasi.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo dpkg -i nama_file_yang_di_download.deb</span></code></pre></td></tr></table></div></figure>
+
+
+<p>atau bisa dilakukan penginstalan melalui ubuntu software center, kemudian cari aplikasi dengan nama davmail. Davamail membutuhkan java agar dapat berjalan dengan normal.</p>
+
+<p>setelah terinstall buka davmail melalui logo ubuntu kemudian ketik davmail.
+biarkan pengaturan lainnya tetap standar, yang perlu anda rubah adalah field untu (OWA) exchange server. Anda dapat mnegisinya dengan alamat owa dari exchage server anda, misalnya <a href="https://webmail.nayaklabs.com/owa">https://webmail.nayaklabs.com/owa</a> atau <a href="https://webmail.nayaklabs.com/exchange.asmx">https://webmail.nayaklabs.com/exchange.asmx</a> kemudian save,</p>
+
+<p>disini saya asumsikan bahwa anda telah mendownload thunderbird, apabila belum maka anda dapat mendownload thunderbird dari ubuntu software center.</p>
+
+<h2>Tahap selanjutnya adalah konfigurasi thunderbird</h2>
+
+<p>langkah lengkah pengaturannya adalah:
+1. Buka thunderbird
+2. klik pada menu <strong>File -> New -> Existing Mail account &hellip;</strong>
+3. ISi nama, email, dan password
+4. Pilih <strong> manual configuration</strong> dengan pengaturan dibawah bila anda tidak merubah stingan pada davmail.
+    * Incoming:
+        1. Type: IMAP
+        2. Server: localhost
+        3. Port: 1143
+        4. SSL: None
+        5. Authentication: normal password
+    * Outgoinh:
+        1. Type: SMTP
+        2. Server: localhost
+        3. Port: 1025
+        4. SSL: None
+        5. Authentication: normal password
+    * username: isi dengan username owa anda
+5. Klik test apabila sudah berhasil anda dapat meng-klik Done</p>
+
+<p>pengaturan selesai, pada saat ini thunderbird sudah dapat melakukan koneksi pada exchange server anda.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>

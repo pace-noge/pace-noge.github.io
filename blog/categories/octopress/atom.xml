@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Nayak Labs]]></title>
   <link href="http://octopress.nayaklabs.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://octopress.nayaklabs.com/"/>
-  <updated>2014-08-07T00:48:47+07:00</updated>
+  <updated>2014-08-07T00:52:50+07:00</updated>
   <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
@@ -85,7 +85,7 @@ nasa:octopress nasa$
 
 <p>maka file yang kita edit untuk isinya adalah file:</p>
 
-<pre><code>source/tes/index.markdown
+<pre><code>source/about/index.markdown
 </code></pre>
 
 <p>silahkan di lengkapi untuk headernya. Setelah selesai melakukan editing, kita perlu menambahkan linknya pada menu kita. langkah-langkahnya adalah:</p>

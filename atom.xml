@@ -4,7 +4,7 @@
   <title><![CDATA[Nayak Labs]]></title>
   <link href="http://octopress.nayaklabs.com/atom.xml" rel="self"/>
   <link href="http://octopress.nayaklabs.com/"/>
-  <updated>2014-08-07T21:38:15+07:00</updated>
+  <updated>2014-08-07T21:42:17+07:00</updated>
   <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
@@ -12,69 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[for 10x faster lsi support]]></title>
-    <link href="http://octopress.nayaklabs.com/blog/2014/08/07/for-10x-faster-lsi-support/"/>
-    <updated>2014-08-07T21:25:40+07:00</updated>
-    <id>http://octopress.nayaklabs.com/blog/2014/08/07/for-10x-faster-lsi-support</id>
-    <content type="html"><![CDATA[<p>Mungkin blogger octopress sering melihat notifikasi di bawah saat menjalankan perintah rake deploy.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Notice: for 10x faster LSI support, please install http://rb-gsl.rubyforge.org/</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Apabila para blogger perlu memproses banyak file (membuat postingan baru), maka lsi ini berguna untuk meningkatkan kecepatan generate file oleh jekyll. Pada notofikasi terlihat alamat web dari gsl, Ketika saya mencoba membuka alamat tersebut chrome menampilkan pesan <strong>This webpage is not available</strong>. Alamat ruby gsl adalah <a href="https://rubygems.org/gems/rb-gsl">rb-gsl</a>. Disini saya akan menjelaskan cara menginstall Gsl pada OsX mavericks 10.9.4.</p>
-
-<p>Langkah-langkah nya adalah:</p>
-
-<ol>
-<li>menginstall gsl dengan brew</li>
-<li>kemudian menginstall rb-gsl</li>
-</ol>
-
-
-<h3>install gsl library menggunakan brew</h3>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>nasa:octopress nasa<span class="nv">$ </span>brew install <span class="nv">gsl</span>
-</span><span class='line'><span class="o">==</span>&gt; Downloading https://downloads.sf.net/project/machomebrew/Bottles/gsl-1.16.mavericks.bottle.tar.gz
-</span><span class='line'><span class="c">######################################################################## 100.0%</span>
-</span><span class='line'><span class="o">==</span>&gt; Pouring gsl-1.16.mavericks.bottle.tar.gz
-</span><span class='line'>🍺  /usr/local/Cellar/gsl/1.16: <span class="m">245</span> files, 8.5M
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>install rb-gsl dengan menggunakan gem install</h3>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>nasa:octopress nasa<span class="nv">$ </span>gem install rb-gsl
-</span><span class='line'>Fetching: narray-0.6.0.9.gem <span class="o">(</span>100%<span class="o">)</span>
-</span><span class='line'>Building native extensions.  This could take a <span class="k">while</span>...
-</span><span class='line'>Successfully installed narray-0.6.0.9
-</span><span class='line'>Fetching: rb-gsl-1.16.0.2.gem <span class="o">(</span>100%<span class="o">)</span>
-</span><span class='line'>Building native extensions.  This could take a <span class="k">while</span>...
-</span><span class='line'>Successfully installed rb-gsl-1.16.0.2
-</span><span class='line'><span class="m">2</span> gems installed
-</span><span class='line'>nasa:octopress nasa<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Kemudian saya mencoba menjalankan perintah rake generate, dan rake deploy, yang hasilnya adalah:</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Membuat postingan dan halaman baru pada Octopress]]></title>

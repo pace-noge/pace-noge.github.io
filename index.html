@@ -9,7 +9,7 @@
   <meta name="author" content="Nasa">
 
   
-  <meta name="description" content="Menambahkan postingan baru Cara menambahkan postingan baru pada octopress sebenarnya sangat mudah, postingan baru dapat di generate dengan perintah &hellip;">
+  <meta name="description" content="Apabila para blogger perlu memproses banyak file (membuat postingan baru), maka lsi ini berguna untuk meningkatkan kecepatan generate file oleh &hellip;">
   <meta name="keywords" content="">
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,259 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/07/for-10x-faster-lsi-support/">For 10x Faster Lsi Support</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-07T21:48:11+07:00" pubdate data-updated="true">Aug 7<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Apabila para blogger perlu memproses banyak file (membuat postingan baru), maka lsi ini berguna untuk meningkatkan kecepatan generate file oleh jekyll. Pada notofikasi terlihat alamat web dari gsl, Ketika saya mencoba membuka alamat tersebut chrome menampilkan pesan <strong>This webpage is not available</strong>. Alamat ruby gsl adalah <a href="https://rubygems.org/gems/rb-gsl">rb-gsl</a>. Disini saya akan menjelaskan cara menginstall Gsl pada OsX mavericks 10.9.4.</p>
+
+<p>Langkah-langkahnya adalah:</p>
+
+<ol>
+<li>Install gsl dengan brew</li>
+<li>Instal gem rb-gsl</li>
+</ol>
+
+
+<p><strong>Install library gsl</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>nasa:octopress nasa<span class="nv">$ </span>brew install <span class="nv">gsl</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://downloads.sf.net/project/machomebrew/Bottles/gsl-1.16.mavericks.bottle.tar.gz
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'><span class="o">==</span>&gt; Pouring gsl-1.16.mavericks.bottle.tar.gz
+</span><span class='line'>🍺  /usr/local/Cellar/gsl/1.16: <span class="m">245</span> files, 8.5M
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Install rb-gsl</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>nasa:octopress nasa<span class="nv">$ </span>gem install rb-gsl
+</span><span class='line'>Fetching: narray-0.6.0.9.gem <span class="o">(</span>100%<span class="o">)</span>
+</span><span class='line'>Building native extensions.  This could take a <span class="k">while</span>...
+</span><span class='line'>Successfully installed narray-0.6.0.9
+</span><span class='line'>Fetching: rb-gsl-1.16.0.2.gem <span class="o">(</span>100%<span class="o">)</span>
+</span><span class='line'>Building native extensions.  This could take a <span class="k">while</span>...
+</span><span class='line'>Successfully installed rb-gsl-1.16.0.2
+</span><span class='line'><span class="m">2</span> gems installed
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>tambahkan lsi support pada _config.yml pada jekyll.
+sebelum ditambahkan lsi: true</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># ----------------------- #</span>
+</span><span class='line'><span class="c">#    Jekyll &amp; Plugins     #</span>
+</span><span class='line'><span class="c"># ----------------------- #</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># If publishing to a subdirectory as in http://site.com/project set &#39;root: /project&#39;</span>
+</span><span class='line'>root: /
+</span><span class='line'>permalink: /blog/:year/:month/:day/:title/
+</span><span class='line'><span class="nb">source</span>: <span class="nb">source</span>
+</span><span class='line'>destination: public
+</span><span class='line'>plugins: plugins
+</span><span class='line'>code_dir: downloads/code
+</span><span class='line'>category_dir: blog/categories
+</span><span class='line'>markdown: rdiscount
+</span><span class='line'>rdiscount:
+</span><span class='line'>  extensions:
+</span><span class='line'>    - autolink
+</span><span class='line'>    - footnotes
+</span><span class='line'>    - smart
+</span><span class='line'>highlighter: pygments <span class="c"># default python pygments have been replaced by pygments.rb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>setelah di tambahkan lsi support:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># ----------------------- #</span>
+</span><span class='line'><span class="c">#    Jekyll &amp; Plugins     #</span>
+</span><span class='line'><span class="c"># ----------------------- #</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># If publishing to a subdirectory as in http://site.com/project set &#39;root: /project&#39;</span>
+</span><span class='line'>root: /
+</span><span class='line'>permalink: /blog/:year/:month/:day/:title/
+</span><span class='line'><span class="nb">source</span>: <span class="nb">source</span>
+</span><span class='line'>destination: public
+</span><span class='line'>plugins: plugins
+</span><span class='line'>code_dir: downloads/code
+</span><span class='line'>category_dir: blog/categories
+</span><span class='line'>markdown: rdiscount
+</span><span class='line'>lsi: <span class="nb">true</span> <span class="c"># tambah lsi support</span>
+</span><span class='line'>rdiscount:
+</span><span class='line'>  extensions:
+</span><span class='line'>    - autolink
+</span><span class='line'>    - footnotes
+</span><span class='line'>    - smart
+</span><span class='line'>highlighter: pygments <span class="c"># default python pygments have been replaced by pygments.rb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>kemudian coba jalankan rake generate, walaupun masih ada notice maka akan ada perbedaan seperti dibawah:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>nasa:octopress nasa<span class="nv">$ </span>rake generate
+</span><span class='line'><span class="c">## Generating Site with Jekyll</span>
+</span><span class='line'>unchanged sass/screen.scss
+</span><span class='line'>Notice: <span class="k">for</span> 10x faster LSI support, please install http://rb-gsl.rubyforge.org/
+</span><span class='line'>Configuration file: /Users/nasa/private_project/github_octopress/octopress/_config.yml
+</span><span class='line'>            Source: <span class="nb">source</span>
+</span><span class='line'><span class="nb">       </span>Destination: public
+</span><span class='line'>      Generating...
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/octopress/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/blogging/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/email/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in robots.txt does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/octopress/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/blogging/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/email/atom.xml does not exist.
+</span><span class='line'>                    <span class="k">done</span>.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>setelah menambahkan gsl maka akan menjadi:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>nasa:octopress nasa<span class="nv">$ </span>rake generate
+</span><span class='line'><span class="c">## Generating Site with Jekyll</span>
+</span><span class='line'>unchanged sass/screen.scss
+</span><span class='line'>Notice: <span class="k">for</span> 10x faster LSI support, please install http://rb-gsl.rubyforge.org/
+</span><span class='line'>Configuration file: /Users/nasa/private_project/github_octopress/octopress/_config.yml
+</span><span class='line'>            Source: <span class="nb">source</span>
+</span><span class='line'><span class="nb">       </span>Destination: public
+</span><span class='line'>      Generating...
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/octopress/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/blogging/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/email/atom.xml does not exist.
+</span><span class='line'>
+</span><span class='line'>  Populating LSI...
+</span><span class='line'>Rebuilding index...
+</span><span class='line'>                         Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in robots.txt does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/octopress/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/blogging/atom.xml does not exist.
+</span><span class='line'>     Build Warning: Layout <span class="s1">&#39;nil&#39;</span> requested in blog/categories/email/atom.xml does not exist.
+</span><span class='line'>                    <span class="k">done</span>.
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>

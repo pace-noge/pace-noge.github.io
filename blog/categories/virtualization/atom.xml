@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: virtualization | Nayak Labs]]></title>
+  <link href="http://octopress.nayaklabs.com/blog/categories/virtualization/atom.xml" rel="self"/>
+  <link href="http://octopress.nayaklabs.com/"/>
+  <updated>2014-08-12T20:08:08+07:00</updated>
+  <id>http://octopress.nayaklabs.com/</id>
+  <author>
+    <name><![CDATA[Nasa]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Virtualbox bridged adapter dengan host ubuntu debian]]></title>
+    <link href="http://octopress.nayaklabs.com/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/"/>
+    <updated>2014-08-12T19:59:16+07:00</updated>
+    <id>http://octopress.nayaklabs.com/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian</id>
+    <content type="html"><![CDATA[<p>Sekedar buat menambah catatan,</p>
+
+<p>hari ini saya mencoba untuk menginstall nocproject dengan virtualbox apliance setelah diinstall ternyata saya tidak bisa mengakses, ternyata network di setup dengan bridge, setelah mencoba beberapa kali dengan command <strong>dhclient</strong> tetap tidak mendapat IP dari router yang sama demgam host. setelah mencari di paman Google akhirnya nemu caranya, yang ternyata sangat mudah. kita cukup menginstall library buat si host atau ubuntunya. command yang saya gunakan adalah.</p>
+
+<pre><code class="bash">sudo apt-get install bridge-utils uml-utilities
+</code></pre>
+
+<p>Setelah menjalankan perintah diatas, saya mencoba menyalakan kembali guest di virtualbox, kemudian masuk di command line dan menjalankan perintah:</p>
+
+<pre><code class="bash">sudo dhclient eth0
+</code></pre>
+
+<p>ternyata berhasil mendapatkan IP. ok problem solved :D..</p>
+]]></content>
+  </entry>
+  
+</feed>

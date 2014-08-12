@@ -9,7 +9,7 @@
   <meta name="author" content="Nasa">
 
   
-  <meta name="description" content="Apabila para blogger perlu memproses banyak file (membuat postingan baru), maka lsi ini berguna untuk meningkatkan kecepatan generate file oleh &hellip;">
+  <meta name="description" content="Sekedar buat menambah catatan, hari ini saya mencoba untuk menginstall nocproject dengan virtualbox apliance setelah diinstall ternyata saya tidak &hellip;">
   <meta name="keywords" content="">
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,58 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/">Virtualbox Bridged Adapter Dengan Host Ubuntu Debian</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-12T19:59:16+07:00" pubdate data-updated="true">Aug 12<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sekedar buat menambah catatan,</p>
+
+<p>hari ini saya mencoba untuk menginstall nocproject dengan virtualbox apliance setelah diinstall ternyata saya tidak bisa mengakses, ternyata network di setup dengan bridge, setelah mencoba beberapa kali dengan command <strong>dhclient</strong> tetap tidak mendapat IP dari router yang sama demgam host. setelah mencari di paman Google akhirnya nemu caranya, yang ternyata sangat mudah. kita cukup menginstall library buat si host atau ubuntunya. command yang saya gunakan adalah.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install bridge-utils uml-utilities
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Setelah menjalankan perintah diatas, saya mencoba menyalakan kembali guest di virtualbox, kemudian masuk di command line dan menjalankan perintah:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo dhclient eth0
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ternyata berhasil mendapatkan IP. ok problem solved :D..</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>

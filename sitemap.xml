@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://octopress.nayaklabs.com/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/</loc>
+    <lastmod>2014-08-12T19:59:16+07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://octopress.nayaklabs.com/blog/2014/08/07/for-10x-faster-lsi-support/</loc>
     <lastmod>2014-08-07T21:48:11+07:00</lastmod>
     <priority>0.8</priority>
@@ -41,28 +47,28 @@
   
   <url>
     <loc>http://octopress.nayaklabs.com/404.html</loc>
-    <lastmod>2014-08-07T22:04:15+07:00</lastmod>
+    <lastmod>2014-08-12T20:08:08+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/</loc>
-    <lastmod>2014-08-07T22:04:15+07:00</lastmod>
+    <lastmod>2014-08-12T20:08:08+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/blog/archives/</loc>
-    <lastmod>2014-08-07T22:04:15+07:00</lastmod>
+    <lastmod>2014-08-12T20:08:08+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/about/</loc>
-    <lastmod>2014-08-07T22:04:15+07:00</lastmod>
+    <lastmod>2014-08-12T20:08:08+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

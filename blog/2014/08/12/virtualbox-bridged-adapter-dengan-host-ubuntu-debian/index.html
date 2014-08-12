@@ -5,14 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Nayak Labs</title>
+  <title>Virtualbox bridged adapter dengan host ubuntu debian - Nayak Labs</title>
   <meta name="author" content="Nasa">
 
   
-  <meta name="description" content="Blog Archive 2014 Virtualbox bridged adapter dengan host ubuntu debian
-Aug 12 2014 posted in virtualization for 10x faster lsi support
-Aug 07 2014 &hellip;">
-  <meta name="keywords" content="">
+  <meta name="description" content="Sekedar buat menambah catatan, hari ini saya mencoba untuk menginstall nocproject dengan virtualbox apliance setelah diinstall ternyata saya tidak &hellip;">
+  <meta name="keywords" content="bridged adapter ubuntu, bridged adapter, adapter, bridged, virtualbox networking">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -20,7 +18,7 @@ Aug 07 2014 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://octopress.nayaklabs.com/blog/archives">
+  <link rel="canonical" href="http://octopress.nayaklabs.com/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian">
   <link href="/favicon.ico" rel="icon">
   
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -78,114 +76,104 @@ Aug 07 2014 &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Virtualbox Bridged Adapter Dengan Host Ubuntu Debian</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-12T19:59:16+07:00" pubdate data-updated="true">Aug 12<sup>th</sup>, 2014</time>
+        
+      </p>
+    
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>Sekedar buat menambah catatan,</p>
 
-  
-  <h2>2014</h2>
+<p>hari ini saya mencoba untuk menginstall nocproject dengan virtualbox apliance setelah diinstall ternyata saya tidak bisa mengakses, ternyata network di setup dengan bridge, setelah mencoba beberapa kali dengan command <strong>dhclient</strong> tetap tidak mendapat IP dari router yang sama demgam host. setelah mencari di paman Google akhirnya nemu caranya, yang ternyata sangat mudah. kita cukup menginstall library buat si host atau ubuntunya. command yang saya gunakan adalah.</p>
 
-<article>
-  
-<h1><a href="/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/">Virtualbox bridged adapter dengan host ubuntu debian</a></h1>
-<time datetime="2014-08-12T19:59:16+07:00" pubdate><span class='month'>Aug</span> <span class='day'>12</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/virtualization/'>virtualization</a></span>
-</footer>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install bridge-utils uml-utilities
+</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<p>Setelah menjalankan perintah diatas, saya mencoba menyalakan kembali guest di virtualbox, kemudian masuk di command line dan menjalankan perintah:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo dhclient eth0
+</span></code></pre></td></tr></table></div></figure>
 
 
-
-<article>
-  
-<h1><a href="/blog/2014/08/07/for-10x-faster-lsi-support/">for 10x faster lsi support</a></h1>
-<time datetime="2014-08-07T21:48:11+07:00" pubdate><span class='month'>Aug</span> <span class='day'>07</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>octopress</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/08/07/membuat-postingan-dan-halaman-baru-pada-octopress/">Membuat postingan dan halaman baru pada Octopress</a></h1>
-<time datetime="2014-08-07T00:26:57+07:00" pubdate><span class='month'>Aug</span> <span class='day'>07</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>octopress</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/08/04/thunderbird-and-exchange-server/">Thunderbird and exchange server</a></h1>
-<time datetime="2014-08-04T23:30:41+07:00" pubdate><span class='month'>Aug</span> <span class='day'>04</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email/'>email</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/08/04/how-to-create-a-blog/">how to create a blog</a></h1>
-<time datetime="2014-08-04T01:39:34+07:00" pubdate><span class='month'>Aug</span> <span class='day'>04</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/blogging/'>blogging</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/08/03/konfigurasi-octopress/">Konfigurasi octopress</a></h1>
-<time datetime="2014-08-03T14:17:16+07:00" pubdate><span class='month'>Aug</span> <span class='day'>03</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>octopress</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/08/02/initial-post-for-my-octopress-based-blog/">initial post for my octopress based blog</a></h1>
-<time datetime="2014-08-02T20:28:30+07:00" pubdate><span class='month'>Aug</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-
-</article>
-
+<p>ternyata berhasil mendapatkan IP. ok problem solved :D..</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn"><a href="/about" title="About the author (Nasa)" rel="author">Nasa</a></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-12T19:59:16+07:00" pubdate data-updated="true">Aug 12<sup>th</sup>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/virtualization/'>virtualization</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://octopress.nayaklabs.com/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/" data-via="udhent" data-counturl="http://octopress.nayaklabs.com/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/08/07/for-10x-faster-lsi-support/" title="Previous Post: for 10x faster lsi support">&laquo; for 10x faster lsi support</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

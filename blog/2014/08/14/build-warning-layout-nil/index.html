@@ -2,11 +2,11 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>About - Nayak Labs</title>
+  <title>Build Warning: Layout 'Nil' - Nayak Labs</title>
   <meta name="author" content="Nasa">
 
   
-  
+  <meta name="keywords" content="build nil, layout nil requested">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://octopress.nayaklabs.com/about">
+  <link rel="canonical" href="http://octopress.nayaklabs.com/blog/2014/08/14/build-warning-layout-nil">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Nayak Labs" type="application/atom+xml">
 
@@ -58,7 +58,7 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li >
+                <li class="active">
                     <a rel="index" href="/">Blog</a>
                 </li>
                 <li >
@@ -91,68 +91,105 @@
       <div id="main" class="container">
         <div id="content">
           <div class="row">
-  <div class="page-content col-md-9">
-    <article role="article">
+  <div class="page-content col-md-9" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="Nayak Labs" />
+    <meta itemprop="description" content="" />
+    <meta itemprop="url" content="http://octopress.nayaklabs.com" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       
-        <header class="page-header">
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-14T22:17:30+07:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 14<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+    
+    <h1 class="entry-title" itemprop="name headline">
+        Build Warning: Layout 'Nil'
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix" itemprop="articleBody"><p>You got this error when you run command rake generate?, just edit the file and replace layout: nil with layout: null for example you got error like this</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Build Warning: Layout 'nil' requested in robots.txt does not exist.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>just open the robots.txt file under source folder and change the layout: nil to layout: null</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: nil
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
+
+
+<p>become:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: null
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+      <footer>
+        <p class="meta text-muted">
           
-            <p class="meta text-muted text-uppercase">
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-02T21:02:00+07:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 2<sup>nd</sup>, 2014</time></p>
-          
-          
-            <h1 class="entry-title">
-              About
-              
-            </h1>
-          
-        </header>
-      
-      <div class="entry-content">
-        <h1>About me</h1>
-
-<h3>whoami ?</h3>
-
-<p>Just ordinary developer from Indonesia</p>
-
-<p>This blog based on octopress and hosted on github, with custom domain name.</p>
-
-      </div>
-      
-        <footer>
-          <p class="meta text-muted">
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-02T21:02:00+07:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 2<sup>nd</sup>, 2014</time>
-            
-          </p>
-          
-            <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://octopress.nayaklabs.com/about/index.html" data-via="udhent" data-counturl="http://octopress.nayaklabs.com/about/index.html" >Tweet</a>
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">Nasa</span></span>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-14T22:17:30+07:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 14<sup>th</sup>, 2014</time>
+          
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</span>
+
+
+        </p>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://octopress.nayaklabs.com/blog/2014/08/14/build-warning-layout-nil/" data-via="udhent" data-counturl="http://octopress.nayaklabs.com/blog/2014/08/14/build-warning-layout-nil/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -162,24 +199,31 @@
   
 </div>
 
-          
-        </footer>
-      
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/" title="Previous Post: Virtualbox bridged adapter dengan host ubuntu debian">&laquo; Virtualbox bridged adapter dengan host ubuntu debian</a></li>
+            
+            
+          </ul>
+        
+      </footer>
     </article>
     
   </div>
 
   
-    <aside class="sidebar col-md-3">
-      
-        <section class="panel panel-default">
+  <aside class="sidebar col-md-3">
+    
+      <section class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Recent Posts</h3>
   </div>
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2014/08/14/build-warning-layout-nil/">Build Warning: Layout 'Nil'</a>
+    <a class="list-group-item active" href="/blog/2014/08/14/build-warning-layout-nil/">Build Warning: Layout 'Nil'</a>
     
     <a class="list-group-item " href="/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/">Virtualbox Bridged Adapter Dengan Host Ubuntu Debian</a>
     
@@ -241,8 +285,8 @@
 
 
 
-      
-    </aside>
+    
+  </aside>
   
 </div>
 

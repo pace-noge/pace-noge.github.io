@@ -4,7 +4,7 @@
   <title><![CDATA[Nayak Labs]]></title>
   <link href="http://octopress.nayaklabs.com/atom.xml" rel="self"/>
   <link href="http://octopress.nayaklabs.com/"/>
-  <updated>2014-08-14T22:12:14+07:00</updated>
+  <updated>2014-08-14T22:23:14+07:00</updated>
   <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Build Warning: Layout 'Nil']]></title>
+    <link href="http://octopress.nayaklabs.com/blog/2014/08/14/build-warning-layout-nil/"/>
+    <updated>2014-08-14T22:17:30+07:00</updated>
+    <id>http://octopress.nayaklabs.com/blog/2014/08/14/build-warning-layout-nil</id>
+    <content type="html"><![CDATA[<p>You got this error when you run command rake generate?, just edit the file and replace layout: nil with layout: null for example you got error like this</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Build Warning: Layout 'nil' requested in robots.txt does not exist.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>just open the robots.txt file under source folder and change the layout: nil to layout: null</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: nil
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
+
+
+<p>become:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: null
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Virtualbox Bridged Adapter Dengan Host Ubuntu Debian]]></title>

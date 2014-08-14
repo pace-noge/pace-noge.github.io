@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Nayak Labs]]></title>
   <link href="http://octopress.nayaklabs.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://octopress.nayaklabs.com/"/>
-  <updated>2014-08-14T22:12:14+07:00</updated>
+  <updated>2014-08-14T22:23:14+07:00</updated>
   <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Build Warning: Layout 'Nil']]></title>
+    <link href="http://octopress.nayaklabs.com/blog/2014/08/14/build-warning-layout-nil/"/>
+    <updated>2014-08-14T22:17:30+07:00</updated>
+    <id>http://octopress.nayaklabs.com/blog/2014/08/14/build-warning-layout-nil</id>
+    <content type="html"><![CDATA[<p>You got this error when you run command rake generate?, just edit the file and replace layout: nil with layout: null for example you got error like this</p>
+
+<pre><code>Build Warning: Layout 'nil' requested in robots.txt does not exist.
+</code></pre>
+
+<p>just open the robots.txt file under source folder and change the layout: nil to layout: null</p>
+
+<pre><code>---
+layout: nil
+---
+</code></pre>
+
+<p>become:</p>
+
+<pre><code>---
+layout: null
+---
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[For 10x Faster Lsi Support]]></title>

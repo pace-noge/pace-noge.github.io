@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://octopress.nayaklabs.com/blog/2014/08/24/error-unable-to-unlink-old-permission-denied/</loc>
+    <lastmod>2014-08-24T23:07:49+07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://octopress.nayaklabs.com/blog/2014/08/14/build-warning-layout-nil/</loc>
     <lastmod>2014-08-14T22:17:30+07:00</lastmod>
     <priority>0.8</priority>
@@ -53,28 +59,28 @@
   
   <url>
     <loc>http://octopress.nayaklabs.com/404.html</loc>
-    <lastmod>2014-08-14T22:33:03+07:00</lastmod>
+    <lastmod>2014-08-24T23:14:47+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/blog/archives/</loc>
-    <lastmod>2014-08-14T22:33:03+07:00</lastmod>
+    <lastmod>2014-08-24T23:14:47+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/</loc>
-    <lastmod>2014-08-14T22:33:03+07:00</lastmod>
+    <lastmod>2014-08-24T23:14:47+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://octopress.nayaklabs.com/about/</loc>
-    <lastmod>2014-08-14T22:33:03+07:00</lastmod>
+    <lastmod>2014-08-24T23:14:47+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

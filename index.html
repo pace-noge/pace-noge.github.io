@@ -120,6 +120,56 @@
 
 
 
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-24T23:07:49+07:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 24<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+    
+      <h1 class="entry-title" itemprop="name headline"><a href="/blog/2014/08/24/error-unable-to-unlink-old-permission-denied/" itemprop="url">Error: Unable to Unlink Old (Permission Denied)</a></h1>
+    
+  </header>
+
+
+  <div class="entry-content clearfix" itemprop="articleBody description"><p>Sometimes when we try to pull from remote repository we got this error:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>error: unable to unlink old 'path/repo/file' (Permission denied)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The simple solution is by change the access of the file parent folder so your account have access to write into that folder. In linux we can use this command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo chmod -R g+w path/repo
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>hope this can help fix your problem</p>
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
 <span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-14T22:17:30+07:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 14<sup>th</sup>, 2014</time>
         
       </p>
@@ -620,98 +670,6 @@ sebelum ditambahkan lsi: true</p>
 
         </article>
       
-      
-        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-04T23:30:41+07:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 4<sup>th</sup>, 2014</time>
-        
-      </p>
-    
-    
-      <h1 class="entry-title" itemprop="name headline"><a href="/blog/2014/08/04/thunderbird-and-exchange-server/" itemprop="url">Thunderbird and Exchange Server</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix" itemprop="articleBody description"><h2>instalasi Davmail</h2>
-
-<p>Untuk dapat melakukan koneksi dari thunder bird yang dibutuhkan adalah Davmail sebagai perantara antara Thunderbird dan exchange server.</p>
-
-<p>Untuk instalasi davmail anda dapat mendownload dari sini <a href="http://sourceforge.net/projects/davmail/files/">Davmail</a>. setelah anda mendownload versi terakhir dari davamail, buka terminal kemudian masuk ke directory tempat download davmail tersebut. kemudian masukkan perintah berikut untuk instalasi.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo dpkg -i nama_file_yang_di_download.deb</span></code></pre></td></tr></table></div></figure>
-
-
-<p>atau bisa dilakukan penginstalan melalui ubuntu software center, kemudian cari aplikasi dengan nama davmail. Davamail membutuhkan java agar dapat berjalan dengan normal.</p>
-
-<p>setelah terinstall buka davmail melalui logo ubuntu kemudian ketik davmail.
-biarkan pengaturan lainnya tetap standar, yang perlu anda rubah adalah field untu (OWA) exchange server. Anda dapat mnegisinya dengan alamat owa dari exchage server anda, misalnya <a href="https://webmail.nayaklabs.com/owa">https://webmail.nayaklabs.com/owa</a> atau <a href="https://webmail.nayaklabs.com/exchange.asmx">https://webmail.nayaklabs.com/exchange.asmx</a> kemudian save,</p>
-
-<p>disini saya asumsikan bahwa anda telah mendownload thunderbird, apabila belum maka anda dapat mendownload thunderbird dari ubuntu software center.</p>
-
-<h2>Tahap selanjutnya adalah konfigurasi thunderbird</h2>
-
-<p>langkah lengkah pengaturannya adalah:</p>
-
-<ol>
-<li>Buka thunderbird</li>
-<li>klik pada menu <strong>File -> New -> Existing Mail account &hellip;</strong></li>
-<li>ISi nama, email, dan password</li>
-<li><p>Pilih <strong> manual configuration</strong> dengan pengaturan dibawah bila anda tidak merubah stingan pada davmail.</p>
-
-<ul>
-<li><p>Incoming:</p>
-
-<ol>
-<li> Type: IMAP</li>
-<li> Server: localhost</li>
-<li> Port: 1143</li>
-<li> SSL: None</li>
-<li> Authentication: normal password</li>
-</ol>
-</li>
-<li><p>Outgoing:</p>
-
-<ol>
-<li> Type: SMTP</li>
-<li> Server: localhost</li>
-<li> Port: 1025</li>
-<li> SSL: None</li>
-<li> Authentication: normal password</li>
-</ol>
-</li>
-<li><p>username: isi dengan username owa anda</p></li>
-</ul>
-</li>
-<li><p>Klik test apabila sudah berhasil anda dapat meng-klik Done</p></li>
-</ol>
-
-
-<p>pengaturan selesai, pada saat ini thunderbird sudah dapat melakukan koneksi pada exchange server anda.</p>
-</div>
-  
-  
-
-
-        </article>
-      
     </div>
 
     <ul class="pager">
@@ -735,6 +693,8 @@ biarkan pengaturan lainnya tetap standar, yang perlu anda rubah adalah field unt
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2014/08/24/error-unable-to-unlink-old-permission-denied/">Error: Unable to Unlink Old (Permission Denied)</a>
+    
     <a class="list-group-item " href="/blog/2014/08/14/build-warning-layout-nil/">Build Warning: Layout &#8216;Nil&#8217;</a>
     
     <a class="list-group-item " href="/blog/2014/08/12/virtualbox-bridged-adapter-dengan-host-ubuntu-debian/">Virtualbox Bridged Adapter Dengan Host Ubuntu Debian</a>
@@ -742,8 +702,6 @@ biarkan pengaturan lainnya tetap standar, yang perlu anda rubah adalah field unt
     <a class="list-group-item " href="/blog/2014/08/07/for-10x-faster-lsi-support/">For 10x Faster Lsi Support</a>
     
     <a class="list-group-item " href="/blog/2014/08/07/membuat-postingan-dan-halaman-baru-pada-octopress/">Membuat Postingan Dan Halaman Baru Pada Octopress</a>
-    
-    <a class="list-group-item " href="/blog/2014/08/04/thunderbird-and-exchange-server/">Thunderbird and Exchange Server</a>
     
   </div>
 </section>

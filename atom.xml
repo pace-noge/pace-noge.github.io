@@ -4,7 +4,7 @@
   <title><![CDATA[Nayak Labs]]></title>
   <link href="http://octopress.nayaklabs.com/atom.xml" rel="self"/>
   <link href="http://octopress.nayaklabs.com/"/>
-  <updated>2014-08-14T22:33:03+07:00</updated>
+  <updated>2014-08-24T23:14:47+07:00</updated>
   <id>http://octopress.nayaklabs.com/</id>
   <author>
     <name><![CDATA[Nasa]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Error: Unable to Unlink Old (Permission Denied)]]></title>
+    <link href="http://octopress.nayaklabs.com/blog/2014/08/24/error-unable-to-unlink-old-permission-denied/"/>
+    <updated>2014-08-24T23:07:49+07:00</updated>
+    <id>http://octopress.nayaklabs.com/blog/2014/08/24/error-unable-to-unlink-old-permission-denied</id>
+    <content type="html"><![CDATA[<p>Sometimes when we try to pull from remote repository we got this error:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>error: unable to unlink old 'path/repo/file' (Permission denied)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The simple solution is by change the access of the file parent folder so your account have access to write into that folder. In linux we can use this command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo chmod -R g+w path/repo
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>hope this can help fix your problem</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Build Warning: Layout 'Nil']]></title>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Git | Nayak Labs]]></title>
+  <link href="http://octopress.nayaklabs.com/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://octopress.nayaklabs.com/"/>
+  <updated>2014-08-24T23:14:47+07:00</updated>
+  <id>http://octopress.nayaklabs.com/</id>
+  <author>
+    <name><![CDATA[Nasa]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Error: Unable to Unlink Old (Permission Denied)]]></title>
+    <link href="http://octopress.nayaklabs.com/blog/2014/08/24/error-unable-to-unlink-old-permission-denied/"/>
+    <updated>2014-08-24T23:07:49+07:00</updated>
+    <id>http://octopress.nayaklabs.com/blog/2014/08/24/error-unable-to-unlink-old-permission-denied</id>
+    <content type="html"><![CDATA[<p>Sometimes when we try to pull from remote repository we got this error:</p>
+
+<pre><code>error: unable to unlink old 'path/repo/file' (Permission denied)
+</code></pre>
+
+<p>The simple solution is by change the access of the file parent folder so your account have access to write into that folder. In linux we can use this command:</p>
+
+<pre><code class="bash">sudo chmod -R g+w path/repo
+</code></pre>
+
+<p>hope this can help fix your problem</p>
+]]></content>
+  </entry>
+  
+</feed>
